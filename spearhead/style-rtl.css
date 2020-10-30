@@ -653,6 +653,19 @@ ul.wp-block-categories,
 	border-bottom: var(--form--border-width) solid var(--form--border-color);
 }
 
+#content .wc-block-grid .wc-block-grid__product .wc-block-grid__product-onsale {
+	top: -0.5em;
+	left: -0.5em;
+}
+
+#content .wc-block-grid .wc-block-grid__product-title {
+	font-family: var(--global--font-secondary);
+}
+
+#content .wc-block-grid .wc-block-grid__product-price {
+	color: var(--global--color-foreground);
+}
+
 .screen-reader-text, .search-form input[type="submit"] {
 	/* Text meant only for screen readers. */
 	border: 0;
@@ -767,14 +780,16 @@ ul.wp-block-categories,
 	font-family: var(--global--font-secondary);
 }
 
-body[class*="woocommerce"] #page span.onsale {
+body[class*="woocommerce"] #page span.onsale,
+#content .wc-block-grid .wc-block-grid__product .wc-block-grid__product-onsale {
 	font-family: var(--global--font-secondary);
 	background-color: var(--global--color-background);
 	border: 1px solid var(--global--color-foreground);
 }
 
 @media (prefers-color-scheme: dark) {
-	body[class*="woocommerce"] #page span.onsale {
+	body[class*="woocommerce"] #page span.onsale,
+	#content .wc-block-grid .wc-block-grid__product .wc-block-grid__product-onsale {
 		background-color: var(--global--color-foreground);
 		border: 1px solid var(--global--color-background);
 	}

@@ -2,17 +2,14 @@
 	font-family: var(--global--font-secondary);
 }
 
-body[class*="woocommerce"] #page {
-	span {
-		&.onsale {
-			font-family: var(--global--font-secondary);
-			background-color: var(--global--color-background);
-			border: 1px solid var(--global--color-foreground);
-			@media ( prefers-color-scheme: dark ) {
-				background-color: var(--global--color-foreground);
-				border: 1px solid var(--global--color-background);
-			}
-		}
+body[class*="woocommerce"] #page span.onsale,
+#content .wc-block-grid .wc-block-grid__product .wc-block-grid__product-onsale {
+	font-family: var(--global--font-secondary);
+	background-color: var(--global--color-background);
+	border: 1px solid var(--global--color-foreground);
+	@media ( prefers-color-scheme: dark ) {
+		background-color: var(--global--color-foreground);
+		border: 1px solid var(--global--color-background);
 	}
 }
 
